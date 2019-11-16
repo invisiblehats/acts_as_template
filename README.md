@@ -1,11 +1,11 @@
-# ActAsTemplate
+# ActsAsTemplate
 
 
 ## Usage
 
 ```ruby
 class User < ApplicationRecord
-  act_as_template
+  acts_as_template
 end
 ```
 
@@ -13,7 +13,7 @@ end
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'act_as_template'
+gem 'acts_as_template'
 ```
 
 And then execute:
@@ -23,7 +23,7 @@ $ bundle
 
 Or install it yourself as:
 ```bash
-$ gem install act_as_template
+$ gem install acts_as_template
 ```
 
 ## Contributing

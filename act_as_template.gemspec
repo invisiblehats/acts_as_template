@@ -1,17 +1,17 @@
 $:.push File.expand_path("lib", __dir__)
 
 # Maintain your gem's version:
-require "act_as_template/version"
+require "acts_as_template/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "act_as_template"
-  spec.version     = ActAsTemplate::VERSION
+  spec.name        = "acts_as_template"
+  spec.version     = ActsAsTemplate::VERSION
   spec.authors     = ["Myk Klemme"]
   spec.email       = ["mykklemme@gmail.com"]
-  spec.homepage    = "https://github.com/invisiblehats/act_as_template"
-  spec.summary     = "Summary of ActAsTemplate."
-  spec.description = "Description of ActAsTemplate."
+  spec.homepage    = "https://github.com/invisiblehats/acts_as_template"
+  spec.summary     = "Summary of ActsAsTemplate."
+  spec.description = "Description of ActsAsTemplate."
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

@@ -1,3 +1,3 @@
-module ActAsTemplate
+module ActsAsTemplate
   VERSION = '0.1.0'
 end

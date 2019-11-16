@@ -1,7 +1,7 @@
-require "act_as_template/railtie"
-require "act_as_template/engine"
+require "acts_as_template/railtie"
+require "acts_as_template/engine"
 
-module ActAsTemplate
+module ActsAsTemplate
   extend ActiveSupport::Concern
 
   included do
@@ -11,7 +11,7 @@ module ActAsTemplate
   end
 
   class_methods do
-    def act_as_template(options = {})
+    def acts_as_template(options = {})
       cattr_accessor :foo_bar_field,
                      default: options.fetch(:foo_bar_field, '')
     end

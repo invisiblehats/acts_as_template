@@ -1,5 +1,5 @@
 class ApplicationRecord < ActiveRecord::Base
-  include ActAsTemplate
+  include ActsAsTemplate
 
   self.abstract_class = true
 end

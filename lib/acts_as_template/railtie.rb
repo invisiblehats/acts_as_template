@@ -1,4 +1,4 @@
-module ActAsTemplate
+module ActsAsTemplate
   class Railtie < ::Rails::Railtie
   end
 end
