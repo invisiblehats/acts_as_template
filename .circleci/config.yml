@@ -60,6 +60,7 @@ jobs:
 
   rspec:
     executor: acts_as_template-config
+    steps:
       - run:
           name: run tests
           command: |
@@ -73,6 +74,7 @@ jobs:
               --out /tmp/test-results/rspec/results.xml \
               --format progress \
               $TEST_FILES
+
       - store_test_results:
           path: /tmp/test-results
       - store_artifacts:
