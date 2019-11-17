@@ -61,6 +61,7 @@ jobs:
   rspec:
     executor: acts_as_template-config
     steps:
+      - install_dependencies
       - run:
           name: run tests
           command: |
