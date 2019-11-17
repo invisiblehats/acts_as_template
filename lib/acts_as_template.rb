@@ -1,5 +1,7 @@
 require "acts_as_template/railtie"
 require "acts_as_template/engine"
+# frozen_string_literal: true
+
 
 module ActsAsTemplate
   extend ActiveSupport::Concern
