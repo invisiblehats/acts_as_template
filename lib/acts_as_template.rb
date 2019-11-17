@@ -1,7 +1,7 @@
-require "acts_as_template/railtie"
-require "acts_as_template/engine"
 # frozen_string_literal: true
 
+require 'acts_as_template/engine'
+require 'invisible_standards'
 
 module ActsAsTemplate
   extend ActiveSupport::Concern
