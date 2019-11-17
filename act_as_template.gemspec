@@ -1,36 +1,34 @@
-$:.push File.expand_path("lib", __dir__)
+# frozen_string_literal: true
+
+$LOAD_PATH.push File.expand_path('lib', __dir__)
 
 # Maintain your gem's version:
-require "acts_as_template/version"
+require 'acts_as_template/project_meta'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "acts_as_template"
-  spec.version     = ActsAsTemplate::VERSION
-  spec.authors     = ["Myk Klemme"]
-  spec.email       = ["mykklemme@gmail.com"]
-  spec.homepage    = "https://github.com/invisiblehats/acts_as_template"
-  spec.summary     = "Summary of ActsAsTemplate."
-  spec.description = "Description of ActsAsTemplate."
-  spec.license     = "MIT"
+  spec.name = ActsAsTemplate::NAME
+  spec.version = ActsAsTemplate::VERSION
+  spec.authors = ActsAsTemplate::AUTHORS
+  spec.email = ActsAsTemplate::EMAIL
+  spec.homepage = ActsAsTemplate::HOMEPAGE
+  spec.summary = ActsAsTemplate::SUMMARY
+  spec.description = ActsAsTemplate::DESCRIPTION
+  spec.license = ActsAsTemplate::LICENSE
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "http://mygemserver.com"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
+  spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.files = Dir[
-    "{app,config,db,lib}/**/*",
-    "MIT-LICENSE",
-    "Rakefile",
-    "README.md"
+    '{app,config,db,lib}/**/*',
+    'MIT-LICENSE',
+    'ihv-rubocop.yml',
+    'README.md'
   ]
 
-  spec.add_dependency "rails", "~> 6.0.0"
+  spec.add_dependency 'rails', '>= 4.2'
 
-  spec.add_development_dependency "invisible_standards"
+  spec.add_development_dependency 'invisible_standards'
+  spec.add_development_dependency 'rspec', '>= 3'
+  spec.add_development_dependency 'rubocop', '>= 0.70'
+  spec.add_development_dependency 'rspec_junit_formatter', '>= 0'
 end
